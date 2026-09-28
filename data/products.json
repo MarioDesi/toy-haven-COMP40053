@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Baby Wooden Ring Stacker",
+        "category": "baby_toys",
+        "price": 2500,
+        "image": "../images/products/baby_toys/baby_wooden_ring_stacker.png",
+        "featured": true
+    },
+    {
+        "id": 2,
+        "name": "Octopus Plushie",
+        "category": "baby_toys",
+        "price": 3000,
+        "image": "../images/products/baby_toys/octopus_plushie.jpg",
+        "featured": true
+    },
+    {
+        "id": 3,
+        "name": "Toy Robot",
+        "category": "baby_toys",
+        "price": 3500,
+        "image": "../images/products/baby_toys/toy_robot.jpg",
+        "featured": false
+    },
+    {
+        "id": 4,
+        "name": "Chess",
+        "category": "board_games",
+        "price": 4000,
+        "image": "../images/products/board_games/chess.jpg",
+        "featured": false
+    },
+    {
+        "id": 5,
+        "name": "Monopoly",
+        "category": "board_games",
+        "price": 5500,
+        "image": "../images/products/board_games/monopoly.jpg",
+        "featured": false
+    },
+    {
+        "id": 6,
+        "name": "Scrabble",
+        "category": "board_games",
+        "price": 4500,
+        "image": "../images/products/board_games/scrabble.jpg",
+        "featured": true
+    },
+    {
+        "id": 7,
+        "name": "Luffy Figure",
+        "category": "figurines",
+        "price": 5000,
+        "image": "../images/products/figurines/luffy_figure.jpg",
+        "featured": false
+    },
+    {
+        "id": 8,
+        "name": "Zoro Figure",
+        "category": "figurines",
+        "price": 5000,
+        "image": "../images/products/figurines/zoro_figure.jpg",
+        "featured": false
+    },
+    {
+        "id": 9,
+        "name": "Usopp Figure",
+        "category": "figurines",
+        "price": 4500,
+        "image": "../images/products/figurines/usopp_figure.jpg",
+        "featured": false
+    },
+    {
+        "id": 10,
+        "name": "Volkswagen Van",
+        "category": "toy_cars",
+        "price": 6000,
+        "image": "../images/products/toy_cars/volkswagen_van.jpg",
+        "featured": true
+    },
+    {
+        "id": 11,
+        "name": "White Mercedes",
+        "category": "toy_cars",
+        "price": 6500,
+        "image": "../images/products/toy_cars/white_mercedes.jpg",
+        "featured": false
+    },
+    {
+        "id": 12,
+        "name": "Red Mercedes",
+        "category": "toy_cars",
+        "price": 6500,
+        "image": "../images/products/toy_cars/red_mercedes.jpg",
+        "featured": false
+    }
+]

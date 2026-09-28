@@ -1,0 +1,268 @@
+/* ================================
+   Feedback Page
+================================ */
+
+.feedback-page {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    padding: 50px 20px 70px;
+}
+
+
+/* ================================
+   Heading
+================================ */
+
+.feedback-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.feedback-heading h1 {
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   Feedback Form
+================================ */
+
+.feedback-section {
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: white;
+}
+
+
+.feedback-section h2 {
+    margin-top: 0;
+
+    margin-bottom: 25px;
+}
+
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form-group label {
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font: inherit;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Errors */
+
+.error-message {
+    min-height: 18px;
+
+    font-size: 0.85rem;
+}
+
+
+/* Submit */
+
+.submit-feedback {
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font: inherit;
+    font-weight: 600;
+}
+
+
+/* ================================
+   Success
+================================ */
+
+.feedback-success {
+    text-align: center;
+
+    padding: 30px 10px;
+}
+
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+
+    font-size: 2rem;
+
+    animation: success-pop 0.4s ease;
+}
+
+
+@keyframes success-pop {
+
+    0% {
+        transform: scale(0);
+    }
+
+    70% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* ================================
+   FAQ
+================================ */
+
+.faq-section {
+    margin-top: 60px;
+}
+
+
+.faq-section > h2 {
+    margin-bottom: 25px;
+}
+
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.faq-item {
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    background: white;
+}
+
+
+/* Question */
+
+.faq-question {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 18px 20px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    font: inherit;
+    font-weight: 600;
+}
+
+
+.faq-icon {
+    font-size: 1.4rem;
+
+    transition: transform 0.2s ease;
+}
+
+
+/* Answer */
+
+.faq-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.3s ease,
+        padding 0.3s ease;
+}
+
+
+.faq-answer p {
+    margin: 0;
+
+    padding: 0 20px 18px;
+
+    line-height: 1.6;
+}
+
+
+/* Active FAQ */
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 650px) {
+
+    .feedback-page {
+        padding: 30px 15px 50px;
+    }
+
+    .feedback-section {
+        padding: 20px;
+    }
+
+}

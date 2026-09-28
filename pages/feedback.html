@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", intial-scale="1.0">
+    <meta name="description" content="Toy Haven - Feedback Page">
+    <title>Toy Haven - Feedback Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/header_footer.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/feedback.js" defer></script>
+</head>
+
+<body>
+
+    
+
+
+    <!-- Main -->
+    <main class="feedback-page">
+
+
+        <!-- Page heading -->
+
+        <section class="feedback-heading">
+
+            <h1>
+                Feedback & Support
+            </h1>
+
+            <p>
+                Have a question or something you'd
+                like to tell us? We'd love to hear from you.
+            </p>
+
+        </section>
+
+
+        <!-- Feedback form -->
+
+        <section class="feedback-section">
+
+            <h2>
+                Send Us Your Feedback
+            </h2>
+
+
+            <form
+                id="feedback-form"
+                novalidate
+            >
+
+
+                <!-- Name -->
+
+                <div class="form-group">
+
+                    <label for="feedback-name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="feedback-name"
+                        name="name"
+                        required
+                    >
+
+                    <small
+                        class="error-message"
+                        id="name-error"
+                    ></small>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="feedback-email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="feedback-email"
+                        name="email"
+                        required
+                    >
+
+                    <small
+                        class="error-message"
+                        id="email-error"
+                    ></small>
+
+                </div>
+
+
+                <!-- Message -->
+
+                <div class="form-group">
+
+                    <label for="feedback-message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="feedback-message"
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                    <small
+                        class="error-message"
+                        id="message-error"
+                    ></small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-feedback"
+                >
+                    Submit Feedback
+                </button>
+
+            </form>
+
+
+            <!-- Confirmation -->
+
+            <div
+                class="feedback-success"
+                id="feedback-success"
+                hidden
+            >
+
+                <div class="success-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Thank You!
+                </h3>
+
+                <p>
+                    Your feedback has been submitted successfully.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+
+        <section class="faq-section">
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+
+            <div class="faq-container">
+
+
+                <!-- FAQ 1 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            How do I place an order?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Browse our products, add the
+                            items you want to your cart,
+                            then proceed to checkout and
+                            complete the order form.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            What payment methods are available?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            We currently provide a simulated
+                            card payment option and Cash on
+                            Delivery for this website.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            Can I add products to my wishlist?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. Each product can be marked
+                            as Interested, Not Interested,
+                            or Owned.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            Where is my cart information stored?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Your cart is stored locally in
+                            your browser using localStorage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 5 -->
+
+                <div class="faq-item">
+
+                    <button
+                        class="faq-question"
+                        type="button"
+                    >
+
+                        <span>
+                            How can I contact Toy Haven?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+
+                    <div class="faq-answer">
+
+                        <p>
+                            You can use the feedback form on
+                            this page to send us a message.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>

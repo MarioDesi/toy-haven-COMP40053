@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", intial-scale="1.0">
+    <meta name="description" content="Toy Haven - Checkout Page">
+    <title>Toy Haven - Checkout Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/header_footer.js" defer></script>
+    <script src="../js/checkout.js" defer></script>
+</head>
+<body>
+    
+        <!-- Checkout -->
+    <main class="checkout-page">
+
+        <h1>Checkout</h1>
+
+
+        <div class="checkout-layout">
+
+
+            <!-- Customer information -->
+            <section class="checkout-form-section">
+
+                <h2>Delivery Information</h2>
+
+                <form id="checkout-form" novalidate>
+
+
+                    <!-- Full name -->
+
+                    <div class="form-group">
+
+                        <label for="full-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="fullName"
+                            required
+                        >
+
+                        <small
+                            class="error-message"
+                            id="full-name-error"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+
+                        <small
+                            class="error-message"
+                            id="email-error"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Address -->
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            required
+                        ></textarea>
+
+                        <small
+                            class="error-message"
+                            id="address-error"
+                        ></small>
+
+                    </div>
+
+
+                    <!-- Payment -->
+
+                    <fieldset class="payment-method">
+
+                        <legend>
+                            Payment Method
+                        </legend>
+
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                                required
+                            >
+
+                            Card
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cash"
+                            >
+
+                            Cash on Delivery
+
+                        </label>
+
+
+                        <small
+                            class="error-message"
+                            id="payment-error"
+                        ></small>
+
+                    </fieldset>
+
+
+                    <button
+                        type="submit"
+                        class="confirm-order-button"
+                    >
+                        Confirm Order
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- Order summary -->
+
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkout-items">
+                    <!-- Items inserted by JavaScript -->
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span id="checkout-total">
+                        Rs. 0
+                    </span>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
+        <!-- Success message -->
+
+        <section
+            class="order-success"
+            id="order-success"
+            hidden
+        >
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Order Confirmed!
+            </h2>
+
+            <p>
+                Thank you for your order.
+            </p>
+
+            <p id="order-number"></p>
+
+            <a href="products.html">
+                Continue Shopping
+            </a>
+
+        </section>
+
+    </main>
+    
+    
+</body>
+</html>
+

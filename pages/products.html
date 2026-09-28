@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", intial-scale="1.0">
+    <meta name="description" content="Toy Haven - Products Page">
+    <title>Toy Haven - Products Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/header_footer.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/products.js" defer></script>
+</head>
+<body>
+    
+   <!-- Main content -->
+    <main class="products-page">
+
+        <!-- Page heading -->
+        <section class="products-heading">
+            <h1>Our Products</h1>
+
+            <p>
+                Explore our collection of toys for every age and interest.
+            </p>
+        </section>
+
+
+        <!-- Catalogue controls -->
+        <section class="products-controls">
+
+            <!-- Category filter -->
+            <div class="filter-group">
+
+                <label for="category-filter">
+                    Category
+                </label>
+
+                <select id="category-filter">
+                    <option value="all">All Products</option>
+                    <option value="baby_toys">Baby Toys</option>
+                    <option value="figurines">Figurines</option>
+                    <option value="board_games">Board Games</option>
+                    <option value="toy_cars">Vehicles</option>
+                </select>
+
+            </div>
+
+
+            <!-- Sort -->
+            <div class="filter-group">
+
+                <label for="sort-products">
+                    Sort by
+                </label>
+
+                <select id="sort-products">
+                    <option value="default">Featured</option>
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+                    <option value="name">
+                        Name: A-Z
+                    </option>
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- Products -->
+        <section
+            class="product-grid"
+            id="product-grid"
+            aria-label="Products"
+        >
+            <!-- JavaScript inserts products here -->
+        </section>
+
+
+        <!-- No products message -->
+        <p
+            class="no-products"
+            id="no-products"
+            hidden
+        >
+            No products found.
+        </p>
+
+    </main>
+    
+    
+</body>
+
+</html>

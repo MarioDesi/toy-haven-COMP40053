@@ -1,85 +1,43 @@
-const slides = document.querySelectorAll(".hero-slide");
-const dots = document.querySelectorAll(".dot");
+const mobileSearchButton =
+    document.querySelector("#mobile-search-button");
 
-const previousButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
-
-let currentSlide = 0;
-let slideTimer;
+const searchBar =
+    document.querySelector("#search-form");
 
 
-/* Show a particular slide */
+mobileSearchButton.addEventListener("click", () => {
 
-function showSlide(index) {
-
-    if (index >= slides.length) {
-        currentSlide = 0;
-    } else if (index < 0) {
-        currentSlide = slides.length - 1;
-    } else {
-        currentSlide = index;
-    }
-
-    slides.forEach(slide => {
-        slide.classList.remove("active");
-    });
-
-    dots.forEach(dot => {
-        dot.classList.remove("active");
-    });
-
-    slides[currentSlide].classList.add("active");
-    dots[currentSlide].classList.add("active");
-}
-
-
-/* Next slide */
-
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
-
-
-/* Previous slide */
-
-function previousSlide() {
-    showSlide(currentSlide - 1);
-}
-
-
-/* Reset automatic timer */
-
-function resetTimer() {
-    clearInterval(slideTimer);
-    slideTimer = setInterval(nextSlide, 5000);
-}
-
-
-/* Arrow buttons */
-
-nextButton.addEventListener("click", () => {
-    nextSlide();
-    resetTimer();
-});
-
-previousButton.addEventListener("click", () => {
-    previousSlide();
-    resetTimer();
-});
-
-
-/* Dots */
-
-dots.forEach((dot, index) => {
-
-    dot.addEventListener("click", () => {
-        showSlide(index);
-        resetTimer();
-    });
+    searchBar.classList.toggle("show");
 
 });
 
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
-/* Start automatic rotation */
+if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+}
 
-resetTimer();
+const searchForm = document.querySelector("#search-form");
+const searchInput = document.querySelector("#search-input");
+
+if (searchForm) {
+
+    searchForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const searchTerm = searchInput.value.trim();
+
+        if (searchTerm === "") {
+            return;
+        }
+
+        window.location.href =
+            `/pages/products.html?search=${encodeURIComponent(searchTerm)}`;
+
+    });
+
+}

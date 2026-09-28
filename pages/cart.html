@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", intial-scale="1.0">
+    <meta name="description" content="Toy Haven - Cart Page">
+    <title>Toy Haven - Cart Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/header_footer.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/cart.js" defer></script>
+</head>
+
+<body>
+
+
+
+    <!-- Cart -->
+    <main class="cart-page">
+
+        <h1>Shopping Cart</h1>
+
+        <div class="cart-layout">
+
+            <section
+                class="cart-items"
+                id="cart-items"
+            >
+                <!-- Cart products inserted here -->
+            </section>
+
+
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="cart-total">
+
+                    <span>Total</span>
+
+                    <span id="cart-total">
+                        Rs. 0
+                    </span>
+
+                </div>
+
+                <button
+                    class="checkout-button"
+                    id="checkout-button"
+                    type="button"
+                >
+                    Proceed to Checkout
+                </button>
+
+            </aside>
+
+        </div>
+
+
+        <p
+            class="empty-cart"
+            id="empty-cart"
+            hidden
+        >
+            Your cart is empty.
+        </p>
+
+    </main>
+
+
+
+
+</body>
+
+</html>

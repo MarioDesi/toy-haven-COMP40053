@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", intial-scale="1.0">
+    <meta name="description" content="Toy Haven - Checkout Page">
+    <title>Toy Haven - Checkout Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/header_footer.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/contact.js" defer></script>
+</head>
+
+<body>
+
+
+
+    <main>
+
+        <!-- ========================================
+             HERO
+        ========================================= -->
+
+        <section class="contact-hero">
+
+            <div class="contact-hero-content">
+
+                <span class="section-label">GET IN TOUCH</span>
+
+                <h1>
+                    We'd Love to
+                    <span>Hear From You!</span>
+                </h1>
+
+                <p>
+                    Have a question about an order, a product, or
+                    anything else? Our friendly team is here to help.
+                </p>
+
+            </div>
+
+            <div class="contact-hero-icon">
+                💌
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CONTACT CONTENT
+        ========================================= -->
+
+        <section class="contact-section">
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+                <span class="section-label">CONTACT INFORMATION</span>
+
+                <h2>
+                    Let's Start a
+                    <span>Conversation</span>
+                </h2>
+
+                <p class="contact-intro">
+                    Reach out to us using any of the methods below.
+                    We're always happy to help!
+                </p>
+
+
+                <!-- Address -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <h3>Visit Us</h3>
+
+                        <p>
+                            123 Play Street<br>
+                            Colombo, Sri Lanka
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <div>
+                        <h3>Call Us</h3>
+
+                        <p>
+                            +94 11 234 5678
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
+
+                    <div>
+                        <h3>Email Us</h3>
+
+                        <p>
+                            hello@toyhaven.com
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Opening Hours -->
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        🕐
+                    </div>
+
+                    <div>
+                        <h3>Opening Hours</h3>
+
+                        <p>
+                            Monday – Friday: 9:00 AM – 6:00 PM<br>
+                            Saturday – Sunday: 10:00 AM – 5:00 PM
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================================
+                 CONTACT FORM
+            ========================================= -->
+
+            <div class="contact-form-container">
+
+                <h2>Send Us a Message</h2>
+
+                <p>
+                    Fill out the form and we'll get back to you
+                    as soon as possible.
+                </p>
+
+
+                <form id="contactForm" novalidate>
+
+                    <!-- Name -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                        >
+
+                        <small
+                            class="error-message"
+                            id="nameError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                        >
+
+                        <small
+                            class="error-message"
+                            id="emailError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Subject -->
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What can we help with?"
+                        >
+
+                        <small
+                            class="error-message"
+                            id="subjectError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- Message -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                        ></textarea>
+
+                        <small
+                            class="error-message"
+                            id="messageError">
+                        </small>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn-primary">
+
+                        Send Message →
+
+                    </button>
+
+
+                    <!-- Confirmation -->
+
+                    <div
+                        id="formSuccess"
+                        class="form-success">
+
+                        ✓ Thanks! Your message has been sent.
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             FAQ CTA
+        ========================================= -->
+
+        <section class="contact-cta">
+
+            <div>
+
+                <span class="section-label">
+                    NEED QUICK HELP?
+                </span>
+
+                <h2>
+                    You Might Find the
+                    <span>Answer Here</span>
+                </h2>
+
+                <p>
+                    Check our frequently asked questions for
+                    quick answers about orders, delivery and more.
+                </p>
+
+                <a
+                    href="feedback.html"
+                    class="btn-primary">
+
+                    Visit Support →
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+
+</body>
+
+</html>
